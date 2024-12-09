@@ -1,0 +1,110 @@
+/* Styles for left navigation */
+header nav {
+    position: fixed; /* Keeps the navigation static on scroll */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height of the screen */
+    width: 20%; /* 20% of the screen width */
+    background-color: rgba(78, 62, 95, 0.5); /* Slightly lighter dark background for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(78, 62, 95, 0.5); /* Subtle shadow for separation */
+    z-index: 10; 
+}
+
+header nav .profile-photo {
+    width: 150px; /* Fixed size for the square image */
+    height: 150px;
+    border-radius: 20%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image fits in the circle */
+    margin-bottom: 20px; /* Spacing below the image */
+    border: 3px solid rgb(134, 175, 76); /* Optional border for styling */
+}
+
+header nav .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image is cropped to fit the square */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Navigation fills the width */
+}
+
+header nav ul li {
+    margin: 10px 0; /* Spacing between items */
+}
+
+header nav ul li a {
+    color: rgb(134, 175, 76); /* Accent color */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block; /* Clickable area is the full block */
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.sertificates a {
+text-decoration: none;
+color: rgb(134, 175, 76);
+}
+
+header nav ul li a:hover {
+    background-color: rgb(134, 175, 76); /* Background changes on hover */
+    color: #1e1e1e; /* Dark text on hover background */
+}
+
+/* Content adjustment */
+main {
+    margin-left: 24%; /* Leaves space for the left navigation */
+    padding: 20px;
+}
+
+#about{
+    font-size: 18px;
+}
+
+.name {
+    font-size: 38px;
+}
+
+.fa-brands {
+    font-size: 38px;
+    color: rgb(134, 175, 76);
+}
+
+.fa-solid {
+    font-size: 24px;
+    margin-right: 12px;
+    color: rgb(134, 175, 76);
+}
+
+.green {
+    color: rgb(134, 175, 76);
+}
+
+.course {
+    font-size: 18px;
+}
+
+.date {
+    padding-right: 12%;
+}
+
+/* Page content */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #343336;
+    color: #e0e0e0;
+}
